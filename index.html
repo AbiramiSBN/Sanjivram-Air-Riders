@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanjivram Air Riders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="overlay">
+    <div id="loading" class="panel">
+      <h1>Sanjivram Air Riders</h1>
+      <div class="tip" id="tip">Tip: Drift longer to charge bigger turbo.</div>
+      <div class="bar">
+        <div class="barFill" id="barFill"></div>
+      </div>
+      <div class="pct" id="pct">0%</div>
+      <div class="spinner" aria-hidden="true"></div>
+    </div>
+
+    <div id="menu" class="panel hidden">
+      <h1>Sanjivram Air Riders</h1>
+      <p class="sub">Original arcade air-kart racer. Apples = boosts 🍎</p>
+
+      <div class="controls">
+        <div>
+          <h3>Keyboard</h3>
+          <ul>
+            <li>W/↑ accelerate</li>
+            <li>S/↓ brake/reverse</li>
+            <li>A/←, D/→ steer</li>
+            <li>Shift drift/hop</li>
+            <li>Space use boost</li>
+            <li>E trick (cosmetic)</li>
+            <li>Esc pause</li>
+            <li>R restart</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Controller (MK-like)</h3>
+          <ul>
+            <li>Left stick steer</li>
+            <li>A/Cross accelerate</li>
+            <li>B/Circle brake/reverse</li>
+            <li>RB/R1 drift/hop</li>
+            <li>LB/L1 use boost</li>
+            <li>Y/Triangle look back</li>
+            <li>Start pause</li>
+          </ul>
+        </div>
+      </div>
+
+      <button id="startBtn">Start Race</button>
+      <div class="small" id="padStatus">Controller: not detected</div>
+    </div>
+
+    <div id="pause" class="panel hidden">
+      <h2>Paused</h2>
+      <button id="resumeBtn">Resume</button>
+      <button id="restartBtn">Restart</button>
+      <button id="quitBtn">Quit to Menu</button>
+    </div>
+  </div>
+
+  <canvas id="game" width="1280" height="720"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
